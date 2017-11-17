@@ -1,0 +1,33 @@
+<form method="post" action="#" autocomplete="off">
+	<fieldset class="form">
+		
+		<div class="row">
+			<div class="label">
+				<label for="input-name">Ваше имя <span class="mark">*</span></label></div>
+			<div class="field"><input id="input-name" tabindex="1" class="input" type="text" required="required" value=""></div>
+		</div>
+		
+		<div class="row">
+			<div class="label"><label for="input-phone">Телефон</label></div>
+			<div class="field"><input id="input-phone" tabindex="2" class="input" type="tel" value=""></div>
+		</div>
+		
+		<div class="row">
+			<div class="label"><label for="input-email">Email <span class="mark">*</span></label></div>
+			<div class="field"><input id="input-email" tabindex="3" class="input error" type="email" required="required" value="Поле обязательно для заполнения"></div>
+		</div>
+		
+		<div class="row">
+			<div class="label"><label for="input-msg">Сообщение <span class="mark">*</span></label></div>
+			<div class="field"><textarea id="input-msg" tabindex="4" rows="7" class="textarea" required="required" ></textarea></div>
+		</div>
+
+		<div class="row">
+			<div class="buttons">
+				<input tabindex="5" class="btn" type="button" value="Отправить" id="test-trigger" modal-dialog="#modal-test">
+				<!--<a href="#" tabindex="5" class="btn" id="test-trigger" modal-dialog="#modal-test">Отправить</a>-->
+			</div>
+		</div>
+
+	</fieldset>
+</form>

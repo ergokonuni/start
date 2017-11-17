@@ -1,0 +1,29 @@
+.menu
+	box-sizing: border-box
+	min-height: 80px
+	font-size: 30px
+	line-height: 74px
+	text-align: center
+	color: #fff
+	background-color: #777
+	.list
+		list-style: none
+		padding: 0
+		margin: 0
+	.item
+		margin: 0
+		padding: 0
+		display: inline
+	.item:after
+		content: '|'
+		display: inline
+		padding: 0 11px 0 19px
+	.item:last-child:after
+		content: ''
+		padding: 0
+	a
+		color: inherit
+		text-decoration: none
+		padding: 20px 0
+	a:hover
+		text-decoration: underline

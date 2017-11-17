@@ -1,0 +1,70 @@
+.catalog
+	.list
+		list-style: none
+		padding: 0
+		margin: 0 0 0 -15px
+	.item
+		margin: 0 0 20px 15px
+		padding: 0
+		float: left
+		position: relative
+		&:hover
+			.link
+				background-color: #c9c9c9
+			.title
+				text-decoration: underline
+	.link
+		box-sizing: border-box
+		display: block
+		width: 250px
+		height: 380px
+		padding: 20px
+		background-color: #dcdcdc
+		text-decoration: none
+		position: relative
+		transition: all .1s ease-in-out
+	.img
+		width: 210px
+		height: 210px
+		line-height: 210px
+		text-align: center
+		vertical-align: middle
+		background-color: #fff
+		img
+			display: inline
+			max-width: 100%
+			max-height: 100%
+			margin: 0 0 4px 0
+			vertical-align: middle
+	.img + .title
+		margin-top: 19px
+	.title
+		margin: 0
+		padding: 0 0 2px 0
+		max-height: 54px
+		overflow: hidden
+		font-size: 18px
+		line-height: 18px
+		font-weight: normal
+		color: #767676
+	.price
+		margin: 0
+		padding: 0
+		font-size: 28px
+		line-height: 28px
+		font-weight: bold
+		white-space: nowrap
+		color: #444
+		position: absolute
+		bottom: 16px
+		left: 20px
+	.to-cart
+		width: 32px
+		height: 32px
+		background: url('../img/icons/icon-to-cart-sprite.png') no-repeat center top
+		cursor: pointer
+		position: absolute
+		bottom: 12px
+		right: 34px
+		&:hover
+			background-position: center bottom

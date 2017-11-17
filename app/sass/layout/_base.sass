@@ -1,0 +1,22 @@
+html
+	font-size: 100%
+	text-size-adjust: 100%
+	height: 100%
+body
+	min-width: calc(#{$container_width} + #{$container_border} + #{$container_border})
+	min-height: 100%
+	padding: 0
+	margin: 0
+	position: relative
+
+.container
+	width: $container_width
+	margin: 0 auto
+	border-left: $container_border solid transparent
+	border-right: $container_border solid transparent
+
+.clear
+	clear: both;
+
+.overflow-hidden
+	overflow: hidden
