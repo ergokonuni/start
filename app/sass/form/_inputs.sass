@@ -1,0 +1,42 @@
+.input
+	box-sizing: border-box
+	display: inline-block
+	font-family: 'PT Sans', sans-serif
+	font-size: 14px
+	line-height: 40px
+	height: 42px
+	margin: 0
+	padding: 0 12px
+	color: #535353
+	background-color: #FFF
+	outline: 0
+	border: 1px solid #c3c3c3
+	border-radius: 1px
+	box-shadow: none
+	transition: all .1s ease-in-out
+	&:hover
+		border-color: #555
+	&:focus
+		border-color: #555
+	&.error
+		color: #dc7f7f
+		font-style: italic
+		border-color: #ff8383
+		box-shadow: inset 0 0 13px rgba(228,106,106, .75)
+
+
+input::-webkit-input-placeholder
+	color: #535353
+	opacity: .6
+
+input:-moz-placeholder
+	color: #535353
+	opacity: .6
+
+input::-moz-placeholder
+	color: #535353
+	opacity: .6
+
+input:-ms-input-placeholder
+	color: #535353
+	opacity: .6
