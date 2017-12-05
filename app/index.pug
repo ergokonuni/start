@@ -1,0 +1,14 @@
+extends layout.pug
+
+
+block title
+	- var page_title = "Hello World!";
+	title= page_title
+
+
+block content
+	main.content
+		div.container
+			h1= page_title
+			a(href='#')
+				img(src='./img/catalog/example-1.jpg' alt='')

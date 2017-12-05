@@ -1,0 +1,58 @@
+- var page_title = "Loading...";
+
+doctype html
+block html
+	html
+		
+		
+		block head
+			head
+			
+				block title
+					title= page_title
+				
+				block meta
+					meta(charset='UTF-8')
+					meta(name='author' content='')
+					meta(name='keywords' content='')
+					meta(name='description' content='')
+					meta(http-equiv='X-UA-Compatible' content='IE=edge')
+					meta(name='SKYPE_TOOLBAR' content='SKYPE_TOOLBAR_PARSER_COMPATIBLE')
+					meta(name='format-detection' content='')
+					meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+				
+				block css
+					link(rel='stylesheet' href='./css/libs.min.css')
+					link(rel='stylesheet' href='./css/main.css')
+		
+		
+		block body
+			body
+			
+			
+				// .content
+				block content
+				// /.content
+
+
+				// .header
+				block header
+					header.header
+						div.container
+							p Header
+				// /.header
+				
+				
+				// .footer
+				block footer
+					footer.footer
+						div.container
+							p Footer
+				// /.footer
+				
+				
+				// js
+				block js
+					script(src='./js/libs.min.js')
+					script(src='./js/main.js')
+				// /js
