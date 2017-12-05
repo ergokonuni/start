@@ -1376,24 +1376,24 @@
 								{
 									"1":
 									[
-										479,
-										480
+										2809,
+										2810
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"region.greenish"
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										465,
-										466
+										2787,
+										2788
 									]
 								},
 								"unmatched":
