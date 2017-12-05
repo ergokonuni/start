@@ -14,7 +14,10 @@ var gulp           = require('gulp'),
     fileinclude    = require('gulp-file-include'),
     gulpRemoveHtml = require('gulp-remove-html'),
     bourbon        = require('node-bourbon'),
-    rigger         = require('gulp-rigger');
+    rigger         = require('gulp-rigger'),
+    pug            = require('gulp-pug'),
+    pugInherit     = require('gulp-pug-inheritance'),
+    changed        = require('gulp-changed');
 
 
 gulp.task('browser-sync', function(){
@@ -87,9 +90,19 @@ gulp.task('html', function(){
 });
 
 
-gulp.task('watch', ['sass', 'css-libs', 'js-libs', 'html', 'js', 'browser-sync'], function(){
+gulp.task('pug', function(){
+	return gulp.src('app/**/*.pug')
+		.pipe(changed('app/', { extension: 'html' }))
+		.pipe(pugInherit({ basedir: 'dist' }))
+		.pipe(pug({ pretty: true }))
+		.pipe(gulp.dest('dist'));
+});
+
+
+gulp.task('watch', ['sass', 'css-libs', 'js-libs', 'html', 'js', 'pug', 'browser-sync'], function(){
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch('app/**/*.html', ['html']);
+	gulp.watch('app/**/*.pug', ['pug']);
 	gulp.watch('app/*.php', browserSync.reload);
 	gulp.watch('app/js/**/*.js', ['js']);
 });
