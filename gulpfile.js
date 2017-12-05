@@ -92,10 +92,11 @@ gulp.task('html', function(){
 
 gulp.task('pug', function(){
 	return gulp.src('app/**/*.pug')
-		.pipe(changed('app/', { extension: 'html' }))
-		.pipe(pugInherit({ basedir: 'dist' }))
+		.pipe(changed('dist', { extension: '.html' }))
+		.pipe(pugInherit({ basedir: 'app/', skip: 'node_modules' }))
 		.pipe(pug({ pretty: true }))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist'))
+		.pipe(browserSync.reload({stream: true}));
 });
 
 
