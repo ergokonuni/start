@@ -406,7 +406,7 @@
 						"settings":
 						{
 							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone": 33,
 							"bracket_highlighter.clone_locations":
 							{
 								"close":
